@@ -12,10 +12,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJj-hU-sgq">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJj-hU-sgq">
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="725-D8-AYW">
-                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="375" id="hbn-sQ-OOc"/>
                             </constraints>
@@ -29,19 +29,29 @@
                         <constraint firstItem="725-D8-AYW" firstAttribute="centerY" secondItem="VJj-hU-sgq" secondAttribute="centerY" id="kHa-dl-x5g"/>
                     </constraints>
                 </scrollView>
+                <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMR-px-zjJ">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="U6X-OJ-ref">
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="MbF-cH-Ghm"/>
                     </constraints>
+                    <connections>
+                        <action selector="onPagerValueChanged:" destination="1" eventType="valueChanged" id="8qD-Jj-TGC"/>
+                    </connections>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="U6X-OJ-ref" secondAttribute="trailing" id="0DH-Pv-aRj"/>
                 <constraint firstItem="VJj-hU-sgq" firstAttribute="top" secondItem="1" secondAttribute="top" id="8Vg-K0-WVK"/>
                 <constraint firstAttribute="bottom" secondItem="VJj-hU-sgq" secondAttribute="bottom" id="OUJ-1U-tUx"/>
                 <constraint firstItem="U6X-OJ-ref" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Rxf-Dm-5Ob"/>
+                <constraint firstAttribute="bottom" secondItem="QMR-px-zjJ" secondAttribute="bottom" id="UJJ-un-JSh"/>
                 <constraint firstAttribute="bottom" secondItem="U6X-OJ-ref" secondAttribute="bottom" id="VEF-mz-rfo"/>
+                <constraint firstAttribute="trailing" secondItem="QMR-px-zjJ" secondAttribute="trailing" id="acw-fz-sJw"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="top" secondItem="1" secondAttribute="top" id="bys-XH-EMo"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="clE-fL-CbH"/>
                 <constraint firstItem="VJj-hU-sgq" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="da5-vr-5Mj"/>
                 <constraint firstAttribute="trailing" secondItem="VJj-hU-sgq" secondAttribute="trailing" id="m4Z-WZ-f1K"/>
             </constraints>
@@ -51,6 +61,7 @@
                 <outlet property="cstContentContainer" destination="hbn-sQ-OOc" id="yhX-Im-fTN"/>
                 <outlet property="pager" destination="U6X-OJ-ref" id="Cw9-bL-ecQ"/>
                 <outlet property="scrollView" destination="VJj-hU-sgq" id="u0u-LS-gvQ"/>
+                <outlet property="shadowLine" destination="QMR-px-zjJ" id="ErU-Ed-ClF"/>
             </connections>
             <point key="canvasLocation" x="26" y="52"/>
         </view>

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{643EC535-E9C0-4DCA-92DA-ABABD0E929EE}</ProjectGuid>
+    <ProjectGuid>{0ED0648D-FE8D-4BDB-8BF6-1628FA48D88F}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>SlideshowLibrary</RootNamespace>
-    <AssemblyName>SlideshowLibrary</AssemblyName>
+    <RootNamespace>SlideShowLibrary</RootNamespace>
+    <AssemblyName>SlideShowLibrary</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,47 +20,34 @@
     <WarningLevel>4</WarningLevel>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink></MtouchLink>
+    <MtouchHttpClientHandler></MtouchHttpClientHandler>
+    <MtouchTlsProvider></MtouchTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
+    <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink></MtouchLink>
+    <MtouchHttpClientHandler></MtouchHttpClientHandler>
+    <MtouchTlsProvider></MtouchTlsProvider>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="SDWebImage">
-      <HintPath>..\packages\Xamarin.SDWebImage.3.7.5\lib\Xamarin.iOS\SDWebImage.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SlideshowView.cs" />
-    <Compile Include="SlideshowView.designer.cs" />
-    <Compile Include="ImageCache.cs" />
-    <Compile Include="SlideshowElement.cs" />
-    <Compile Include="SlideshowSettings.cs" />
-    <Compile Include="GradientView.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterfaceDefinition Include="SlideshowView.xib" />
-  </ItemGroup>
-  <ItemGroup>
-    <XamarinComponentReference Include="sdwebimage">
-      <Version>3.7.5</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

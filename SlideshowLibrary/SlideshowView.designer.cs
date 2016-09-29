@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Xamarin Studio to store outlets and
 // actions made in the UI designer. If it is removed, they will be lost.
@@ -23,6 +23,12 @@ namespace SlideshowLibrary
 
 		[Outlet]
 		UIKit.UIScrollView scrollView { get; set; }
+
+		[Outlet]
+		UIKit.UIView shadowLine { get; set; }
+
+		[Action ("onPagerValueChanged:")]
+		partial void onPagerValueChanged (UIKit.UIPageControl sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -36,14 +42,19 @@ namespace SlideshowLibrary
 				cstContentContainer = null;
 			}
 
+			if (pager != null) {
+				pager.Dispose ();
+				pager = null;
+			}
+
 			if (scrollView != null) {
 				scrollView.Dispose ();
 				scrollView = null;
 			}
 
-			if (pager != null) {
-				pager.Dispose ();
-				pager = null;
+			if (shadowLine != null) {
+				shadowLine.Dispose ();
+				shadowLine = null;
 			}
 		}
 	}
