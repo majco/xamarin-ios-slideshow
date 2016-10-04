@@ -1,5 +1,5 @@
 # xamarin-ios-slideshow
-Slideshow image gallery for Xamarin.IOS
+Slideshow image gallery for Xamarin.iOS
 
 ## Features
 - image caching
