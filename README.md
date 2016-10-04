@@ -3,13 +3,13 @@ Slideshow image gallery for Xamarin.IOS
 
 ## Features
 - image caching
-- infinite scolling
+- infinite scrolling
 - slideshow
 - change image on click
 
 ## Preview
 
-![GIF](https://media.giphy.com/media/l0MYLjshDzGWT72co/giphy.gif)<br />
+![GIF](https://media.giphy.com/media/l2Sqg27WtOKpLdTOw/giphy.gif)<br />
 
 ## License
 
