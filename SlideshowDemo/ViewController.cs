@@ -36,6 +36,9 @@ namespace SlideshowDemo
 			settings.SwapIntervalMillis = 5000;
 			settings.AddShadow = true;
 
+			slideshowContainer.SetNeedsLayout();
+			slideshowContainer.LayoutIfNeeded();
+
 			slideShow.Initialize(urlList, settings);
 
 			View.SetNeedsLayout();

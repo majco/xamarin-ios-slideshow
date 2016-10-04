@@ -44,14 +44,14 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="U6X-OJ-ref" secondAttribute="trailing" id="0DH-Pv-aRj"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="top" secondItem="1" secondAttribute="top" id="0OM-cx-bxZ"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="4B7-Ln-Bkw"/>
                 <constraint firstItem="VJj-hU-sgq" firstAttribute="top" secondItem="1" secondAttribute="top" id="8Vg-K0-WVK"/>
                 <constraint firstAttribute="bottom" secondItem="VJj-hU-sgq" secondAttribute="bottom" id="OUJ-1U-tUx"/>
                 <constraint firstItem="U6X-OJ-ref" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Rxf-Dm-5Ob"/>
-                <constraint firstAttribute="bottom" secondItem="QMR-px-zjJ" secondAttribute="bottom" id="UJJ-un-JSh"/>
                 <constraint firstAttribute="bottom" secondItem="U6X-OJ-ref" secondAttribute="bottom" id="VEF-mz-rfo"/>
-                <constraint firstAttribute="trailing" secondItem="QMR-px-zjJ" secondAttribute="trailing" id="acw-fz-sJw"/>
-                <constraint firstItem="QMR-px-zjJ" firstAttribute="top" secondItem="1" secondAttribute="top" id="bys-XH-EMo"/>
-                <constraint firstItem="QMR-px-zjJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="clE-fL-CbH"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="height" secondItem="1" secondAttribute="height" id="W0E-5m-zbF"/>
+                <constraint firstItem="QMR-px-zjJ" firstAttribute="width" secondItem="1" secondAttribute="width" id="YZ7-ut-Seo"/>
                 <constraint firstItem="VJj-hU-sgq" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="da5-vr-5Mj"/>
                 <constraint firstAttribute="trailing" secondItem="VJj-hU-sgq" secondAttribute="trailing" id="m4Z-WZ-f1K"/>
             </constraints>
